@@ -1,0 +1,66 @@
+/* Growth.css */
+
+#stats {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.heading span {
+  font-weight: 500;
+  font-size: 24px;
+  color: #ff3147;
+  text-transform: uppercase;
+}
+
+.heading h1 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stats {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  flex-basis: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stats:hover {
+  transform: scale(1.05);
+}
+
+.stats img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.stats h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 18px;
+}

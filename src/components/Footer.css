@@ -1,0 +1,10 @@
+#footer {
+    background: linear-gradient(135deg, #c40031, #ff3147);
+    color: #ffffff;
+    text-align: center;
+    padding: 130px 0;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}

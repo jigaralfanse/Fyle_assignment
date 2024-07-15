@@ -1,0 +1,229 @@
+/* Hero.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Section Styles */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 10rem;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 68px;
+}
+
+.hero-content {
+  width: 614px;
+}
+
+#hero h4 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 80px;
+  letter-spacing: 0px;
+  color: #ff3147;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#hero h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#hero p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 50px 0;
+  color: #000000;
+}
+
+#hero img {
+  width: 100%;
+  max-width: 487px;
+}
+
+button.btn-red {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff3147;
+  color: #fff;
+  padding: 15px 28px;
+}
+
+button.btn-red:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styles */
+.modal {
+  display: block !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 800ms ease-in-out, opacity 800ms ease-in-out;
+  border: 1px solid #f1f1f1;
+  z-index: 20;
+  background-color: #ffffff;
+  background: #fff173; /* Adjust background color as needed */
+  width: 500px;
+  max-width: 80%;
+  height: fit-content;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0;
+  opacity: 0;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.modal-header h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d3142;
+}
+
+.close-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #2d3142;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.form-floating {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-floating input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-floating input:focus {
+  border-color: #ff3147;
+}
+
+.form-floating label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 5px;
+  color: #6c757d;
+  font-size: 14px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: #ff3147;
+}
+
+.name-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.terms-and-conditions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.margin {
+  margin-right: 8px;
+  color: red;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff3147;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e20e3b;
+}
+
+/* Overlay Styles */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 800ms ease-in-out;
+  z-index: 10;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

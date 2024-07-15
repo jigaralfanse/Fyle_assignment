@@ -1,0 +1,184 @@
+/* Add this to the top of your Hero.js file */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 10rem;
+    overflow-x: hidden;
+  }
+  
+  .grey-bg {
+    background-color: #fafafa;
+  }
+  
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+  }
+  
+  .hero-content {
+    width: 614px;
+  }
+  
+  #hero h4 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    color: #ff3147;
+    text-transform: uppercase;
+  }
+  
+  #hero h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  #hero p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 50px 0;
+    color: #000000;
+    opacity: 1;
+  }
+  
+  #hero img {
+    width: 100%;
+    max-width: 487px;
+  }
+  
+  button.btn-red {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff3147;
+    color: #fff;
+    padding: 15px 28px;
+  }
+  
+  button.btn-red:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* modal CSS */
+  
+  .modal {
+    display: block !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 800ms ease-in-out;
+    border: 1px solid #f1f1f1;
+    z-index: 10;
+    background-color: #ffffff;
+    width: 500px;
+    max-width: 80%;
+    height: fit-content;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    display: flex;
+    padding: 30px;
+    padding-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+  }
+  
+  #modal .modal-header h4 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    color: #2d3142;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+  
+  .modal-body {
+    padding-top: 0;
+    padding: 30px;
+  }
+  
+  .name-fields {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .margin {
+    margin: 4px 8px;
+    accent-color: red !important;
+  }
+  
+  .terms-and-conditions {
+    display: flex;
+    width: 100%;
+    padding: 24px 0;
+    color: #616678;
+  }
+  
+  .terms-and-conditions label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .modal-body .btn {
+    width: 100%;
+    background: #ff3147;
+    color: #fff;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 800ms ease-in-out;
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  

@@ -1,0 +1,96 @@
+/* Adjustments for #about and .container remain the same as before */
+
+#about {
+    background: #ffffff;
+    color: black;
+    padding: 100px 0;
+  }
+  
+  .container {
+    padding: 0 0; /* Adjusted padding for x and y directions */
+  }
+  
+  @media screen and (max-width: 1768px) {
+    .container {
+      padding: 0 100px;
+    }
+  }
+  
+  .project {
+    text-align: center;
+    padding: 0 0;
+  }
+  
+  .project-heading span {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ff3147;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .project-heading h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Adjusted maximum width */
+    margin: 0 auto; /* Center align the row */
+  }
+  
+  .project-col-1 {
+    flex-basis: 68%;
+    height: 80vh;
+  }
+  
+  .project-col-2 {
+    flex-basis: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 80vh;
+  }
+  
+  .grey {
+    background: #f4f4f4;
+    color: black;
+    padding: 5px;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #ff3147;
+    color: #ffffff;
+  }
+  
+  .about-photos {
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 25.5vh;
+    border-radius: 0px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .about-photos:hover {
+    background-color: red;
+    color: black;
+  }
+  
+  .about-photos.red-background {
+    background-color: red;
+    color: white;
+  }
+  
